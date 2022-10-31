@@ -1,34 +1,35 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
-import styles from './header.css?inline';
+import { component$ } from '@builder.io/qwik'
 
 export default component$(() => {
-  useStylesScoped$(styles);
-
-  return (
-    <header>
-      <div class="logo">
-        <a href="https://qwik.builder.io/" target="_blank">
-          <QwikLogo />
-        </a>
-      </div>
-      <ul>
-        <li>
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-            Examples
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
-          </a>
-        </li>
-      </ul>
-    </header>
-  );
-});
+	return (
+		<div>
+			<header class=''>
+				<h1 class=''>
+					Chavyv<span class=''>.</span>Blog
+				</h1>
+				<img class='foto-profil' src='https://media.graphassets.com/sTfo5Du5TZyjaoWm1gK1' alt='foto profil' />
+				<p>Welcome to my blog! This is my place to share something about my life or random thoughts. Hope you enjoy this content!</p>
+			</header>
+			<footer class=''>
+				Made with
+				<a href='https://qwik.builder.io/' target='_blank' rel='noreferrer'>
+					Qwik
+				</a>
+				, &
+				<a href='https://ajusa.github.io/lit/' target='_blank' rel='noreferrer'>
+					lit
+				</a>
+				. Source available on
+				<a href='https://github.com/akbar2habibullah/chavyv-blog-qwik' target='_blank' rel='noreferrer'>
+					GitHub
+				</a>{' '}
+				<br />
+				Copyright © {new Date().getFullYear()}
+				<a href='https://www.chavyv.xyz/' target='_blank' rel='noreferrer'>
+					Chavyv Akvar
+				</a>
+				. All Rights Reserved
+			</footer>
+		</div>
+	)
+})
